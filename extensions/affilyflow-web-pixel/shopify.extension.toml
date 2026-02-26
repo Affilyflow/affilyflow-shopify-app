@@ -1,0 +1,16 @@
+name = "affilyflow-web-pixel"
+type = "web_pixel_extension"
+uid = "dad2944c-b377-0cc8-f9f5-5836d24d7b8ff1bdc5e0"
+
+runtime_context = "strict"
+
+[settings]
+type = "object"
+
+[settings.fields.accountID]
+name = "Account ID"
+description = "Account ID"
+type = "single_line_text_field"
+validations =  [
+  { name = "min", value = "1" }
+]
