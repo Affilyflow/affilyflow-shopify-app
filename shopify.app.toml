@@ -2,7 +2,7 @@
 
 client_id = "0b83178ed3f3eb3df06c8830a35e7f3e"
 name = "Affilyflow"
-application_url = "https://example.com"
+application_url = "https://affilyflow-web-pixel-production.up.railway.app"
 embedded = true
 
 [build]
@@ -28,7 +28,7 @@ api_version = "2026-04"
 scopes = "write_metaobject_definitions,write_metaobjects,write_products,write_pixels"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://affilyflow-web-pixel-production.up.railway.app/auth/callback" ]
 
 [product.metafields.app.demo_info]
 type = "single_line_text_field"
