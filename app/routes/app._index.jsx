@@ -7,6 +7,11 @@ export const loader = async ({ request }) => {
   return { shop: session.shop };
 };
 
+export const clientLoader = async ({ serverLoader }) => {
+  return serverLoader();
+};
+clientLoader.hydrate = true;
+
 export default function Index() {
   const { shop } = useLoaderData();
 
